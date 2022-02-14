@@ -7,14 +7,19 @@ html{
     font-size: 10px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin: 0% 10% 5% 10%;
+    gap: 5px;
+    margin: 0% 5% 5% 5%;
 
+}
+.pick{
+    font-size: 10px;
+    font-weight: bold;
 }
 .choice-content{
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-bottom: 3%;
 }
 
 .welcome{
@@ -32,7 +37,46 @@ html{
     height: 50px;;
 }
 
-.rock .btn::before{
-    background-image: url(images/6-61708_rock-rock-paper-scissors-clipart.jpeg) ;
+.rock .btn, .paper .btn, .scissor .btn{
     background-size: cover;
+    border-radius: 60%;
+}
+.btn:hover{
+    transform: scale(1.2);
+    border-color: goldenrod;
+}
+
+.rock .btn{
+    background-image: url(images/6-61708_rock-rock-paper-scissors-clipart.jpeg) ;
+   
+}
+.paper .btn{
+    background-image: url(images/index.png) ;
+    
+}
+.scissor .btn{
+    background-image: url(images/istockphoto-1159432526-612x612.jpg) ;
+    
+}
+
+.identify{
+    font-size: 7px;
+    text-align: center;
+}
+
+.count-win{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+.your-score, .computer-score{
+    font-size: 10px;
+    
+}
+
+.out{
+    font-size: 8px;
+    font-weight: bold;
+    text-align: center;
 }
